@@ -1,0 +1,320 @@
+/*GENERAL SYLES*/
+*   {
+    margin: 0;
+    padding: 0;
+}
+
+html    {
+    font-size: 62.5%;
+    max-width: 100%;
+}
+
+.divider    {
+    width: 100%;
+    height: 200px;
+    background-image: url("images/divider.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: left;
+}
+
+.divider1    {
+    width: 100%;
+    height: 200px;
+    background-image: url("images/divider1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: left;
+}
+
+/*HEADER STYLES*/
+header  {
+    background-image: url("images/landing.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header nav  {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 56px;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+header nav a    {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    max-width: 100%;
+    text-align: center;
+}
+
+header .heading {
+    width: 100%;
+    height: 100%;
+    
+}
+
+header .heading .name   {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+header .heading .name h1    {
+    font-size: 4rem;
+}
+
+header .heading .name h2   {
+    font-weight: 200;
+}
+
+header .heading .name hr    {
+    width: 60%;
+    margin: 10px auto;
+    color: white;
+}
+
+header .heading .name button    {
+    font-size: 2rem;
+    padding: 5px;
+    background-color: white;
+    font-weight: 500;
+}
+
+/*ABOUT SECTION*/
+#about  {
+    width: 100%;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+}
+
+#about .about-img   {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#about .about-img img   {
+    max-width: 100%;
+    padding: 10px 0;
+}
+
+#about .about-text  {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    font-size: 1.6rem;
+}
+
+/*SKILLS SECTION*/
+#skills {
+    width: 100%;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+#skills .skills-container    {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills .skills-container .skill    {
+    width: 80%;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    font-size: 2em;
+    background-color: #f3f3f3;
+}
+
+#skills .skills-container .skill h2 {
+    padding: 10px;
+    font-size: 4rem;
+}
+
+#skills .skills-container .skill i {
+    padding: 5px;
+    font-size: 5rem;
+}
+
+/*PORTFOLIO SECTION*/
+#portfolio {
+    width: 100%;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+#portfolio .port-container    {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .port-container .port-item    {
+    width: 80%;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    font-size: 2em;
+    background-color: #f3f3f3;
+}
+
+#portfolio .port-container .port-item .port-head h2 {
+    padding: 10px;
+    font-size: 4rem;
+}
+
+#portfolio .port-container .port-item .port-head i {
+    padding: 5px;
+    font-size: 5rem;
+}
+
+#portfolio .port-container .port-item .port-body a button {
+    padding: 10px;
+    margin: 20px;
+    font-size: 1.6rem;
+    background-color: rgb(40,40,40);
+    color: white;
+}
+
+/*FOOTER*/
+footer  {
+    height: 56px;
+    text-align: center;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer a    {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer .muted   {
+    color: grey;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 767px)    {
+    /*HEADING*/
+    header .heading .name h1    {
+        font-size: 6rem;
+    }
+
+    header .heading .name h2    {
+        font-size: 3rem;
+    }
+
+    header .heading .name button    {
+        font-size: 2.5rem;
+    }
+
+    /*ABOUT*/
+    #about .about-text  {
+        font-size: 2.5rem;
+    }
+
+    /*SKILLS*/
+    #skills .skills-container .skill    {
+        font-size: 2.5rem;
+        width: 50%;
+    }
+    
+    #skills .skills-container .skill h2 {
+        font-size: 5rem;
+    }
+    
+    #skills .skills-container .skill i {
+        font-size: 6rem;
+    }
+
+    /*PORTFOLIO*/
+    #portfolio .port-container .port-item    {
+        width: 60%;
+        font-size: 2.5em;
+    }
+    
+    #portfolio .port-container .port-item .port-head h2 {
+        font-size: 5rem;
+    }
+    
+    #portfolio .port-container .port-item .port-head i {
+        font-size: 6rem;
+    }
+    
+    #portfolio .port-container .port-item .port-body a button {
+        font-size: 2.5rem;
+    }
+
+    /*FOOTER*/
+    footer a    {
+        font-size: 2rem;
+    }
+
+    footer .muted   {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1100px)    {
+    /*ABOUT*/
+    #about  {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #about .about-img   {
+        width: 30%;
+    }
+
+    #about .about-text  {
+        font-size: 2.3rem;
+        width: 50%;
+    }
+
+    /*SKILLS*/
+
+    #skills .skills-container   {
+        flex-direction: row;
+    }
+
+    #skills .skills-container .skill    {
+        font-size: 2.3rem;
+        width: 50%;
+    }
+
+    /*PORTFOLIO*/
+    #portfolio .port-container  {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #portfolio .port-container .port-item    {
+        width: 40%;
+        font-size: 2.3em;
+    }
+}
