@@ -100,8 +100,14 @@ header .heading .name hr    {
 header .heading .name button    {
     font-size: 2rem;
     padding: 5px;
-    background-color: white;
+    background-color: rgb(39, 39, 39);
     font-weight: 500;
+    color: white;
+}
+
+header .heading .name button:hover    {
+    background-color: #838383;
+
 }
 
 /*ABOUT SECTION*/
@@ -203,8 +209,12 @@ header .heading .name button    {
     padding: 10px;
     margin: 20px;
     font-size: 1.6rem;
-    background-color: rgb(40,40,40);
+    background-color: rgb(39, 39, 39);
     color: white;
+}
+
+#portfolio .port-container .port-item .port-body a button:hover {
+    background-color:#838383;
 }
 
 /*FOOTER*/
